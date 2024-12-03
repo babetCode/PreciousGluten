@@ -98,7 +98,7 @@ body{
         background-color: snow;
         position: absolute;
         top: 50px;  /* Adjust as needed */
-        left: 10px;  /* Adjust as needed */
+        left: 50%;  /* Adjust as needed */
         box-shadow: 0 2pt 10pt rgba(0, 0, 0, 0.1);
         padding: 10pt;
     }

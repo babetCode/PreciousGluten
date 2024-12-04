@@ -4,7 +4,7 @@ html{
 
 body{
     margin: 0pt;
-    background-color: ivory;
+    background-color: snow;
 }
 
 #main-header{
@@ -26,7 +26,6 @@ body{
 #main-header #mainheaderlogo:hover{
     opacity: 50%;
     width: 84pt;
-    /* max-width: 80pt; */
     padding: 3pt 13pt 0;
 }
 
@@ -62,7 +61,6 @@ body{
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #444;
-    /* text-transform: uppercase; */
     font-weight: bold;
     font-size: 0.8rem;
     display: block;
@@ -86,10 +84,10 @@ body{
 
 }
 
-/* Media Query for small screens */
+/* Media Query for hamburger on small screens */
 @media (max-width: 670pt) {
     #main-header ul {
-        display: none;  /* Hide the list on small screens */
+        display: none; 
     }
     #dropdown-menu {
         visibility: hidden;
@@ -97,10 +95,12 @@ body{
         flex-direction: column;
         background-color: snow;
         position: absolute;
-        top: 60px;  /* Adjust as needed */
-        left: 50%;  /* Adjust as needed */
+        top: 60px; 
+        left: 50%;
+        transform: translateX(-40%);
         box-shadow: 0 2pt 10pt rgba(0, 0, 0, 0.1);
         padding: 10pt;
+        border-radius: 5px;
     }
     #dropdown-menu.show {
         visibility: visible;
@@ -111,6 +111,7 @@ body{
         padding: 10pt;
         color: #444;
         text-decoration: none;
+        border-radius: 5px;
     }
     #dropdown-menu a:hover {
         background-color: brown;
@@ -121,12 +122,13 @@ body{
         flex-direction: column;
         cursor: pointer;
         position: relative;
+        padding: 5pt;
     }
     #hamburger div {
         width: 25px;
         height: 3px;
         background-color: #444;
-        margin: 4pt 0;
+        margin: 2.5pt 0;
         transition: all 0.3s ease;
     }
     #hamburger:hover + #dropdown-menu, 

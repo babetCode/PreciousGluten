@@ -5,13 +5,13 @@ body{
     color: #333;
 }
 
-#hero{
+.hero{
     width: 100%;
     margin: 0pt;
     padding: 0pt;
 }
 
-#hero img{
+.hero img{
     display: block;
     width: 100%;
 }
@@ -30,106 +30,16 @@ body{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#menu-header {
+.page-header {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
     text-align: center;
-    margin: 20px 0;
-    background-color: #f8f8f8;
+    margin: 0;
+    background-color: snow;
     padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    letter-spacing: 1px;
-    line-height: 1.5;
-}
-
-#about-header {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin: 20px 0;
-    background-color: #f8f8f8;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    letter-spacing: 1px;
-    line-height: 1.5;
-}
-
-#contact-header {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin: 20px 0;
-    background-color: #f8f8f8;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    letter-spacing: 1px;
-    line-height: 1.5;
-}
-
-#locations-header {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin: 20px 0;
-    background-color: #f8f8f8;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    letter-spacing: 1px;
-    line-height: 1.5;
-}
-
-#employment-header {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin: 20px 0;
-    background-color: #f8f8f8;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    letter-spacing: 1px;
-    line-height: 1.5;
-}
-
-#contact-header {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin: 20px 0;
-    background-color: #f8f8f8;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    letter-spacing: 1px;
-    line-height: 1.5;
-}
-
-#story-header {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin: 20px 0;
-    background-color: #f8f8f8;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
     line-height: 1.5;
@@ -156,4 +66,40 @@ body{
     font-size: 16pt;
     line-height: 1.5;
     color: #333;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+}
+
+.hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero {
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    width: 100%;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: snow;
+    font-size: 6rem;
+    text-align: center;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    z-index: 2;
 }

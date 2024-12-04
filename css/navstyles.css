@@ -20,14 +20,14 @@ body{
 #main-header #mainheaderlogo{
     width: 80pt;
     transition: all ease 0.3s;
-    padding: 2pt 15pt 0pt;
+    padding: 5pt 15pt 0pt;
 }
 
 #main-header #mainheaderlogo:hover{
     opacity: 50%;
     width: 84pt;
     /* max-width: 80pt; */
-    padding: 0pt 13pt;
+    padding: 3pt 13pt 0;
 }
 
 #main-header #socials {
@@ -97,7 +97,7 @@ body{
         flex-direction: column;
         background-color: snow;
         position: absolute;
-        top: 50px;  /* Adjust as needed */
+        top: 60px;  /* Adjust as needed */
         left: 50%;  /* Adjust as needed */
         box-shadow: 0 2pt 10pt rgba(0, 0, 0, 0.1);
         padding: 10pt;

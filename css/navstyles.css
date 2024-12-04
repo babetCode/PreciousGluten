@@ -17,10 +17,16 @@ body{
     box-shadow: 0 0 10pt rgb(0, 0, 0.2);
 }
 
+#main-header .left-container {
+    display: flex;
+    align-items: flex-end;
+}
+
 #main-header #mainheaderlogo{
     width: 80pt;
     transition: all ease 0.3s;
     padding: 5pt 15pt 0pt;
+    margin: 0;
 }
 
 #main-header #mainheaderlogo:hover{
@@ -31,6 +37,7 @@ body{
 
 #main-header #socials {
     display: flex;
+    justify-content: right;
     gap: 1vw;
     margin-right: 2vw;
 }
@@ -86,6 +93,9 @@ body{
 
 /* Media Query for hamburger on small screens */
 @media (max-width: 670pt) {
+    .hero-text{
+        font-size: 1.5rem;
+    }
     #main-header ul {
         display: none; 
     }
@@ -95,9 +105,9 @@ body{
         flex-direction: column;
         background-color: snow;
         position: absolute;
-        top: 60px; 
-        left: 50%;
-        transform: translateX(-40%);
+        top: 42pt; 
+        left: 10pt;
+        /* transform: translateX(-40%); */
         box-shadow: 0 2pt 10pt rgba(0, 0, 0, 0.1);
         padding: 10pt;
         border-radius: 5px;
@@ -136,5 +146,6 @@ body{
         visibility: visible;
         height: auto;
         opacity: 1;
+        z-index: 3;
     }
 }

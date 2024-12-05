@@ -39,7 +39,7 @@ body{
 }
 
 .hero-text {
-    margin: calc(12vw - 130pt) 0 0;
+    margin: calc(12vw - 150pt) 0 0;
     width: 100%;
     font-family: "Playfair Display", serif;
     font-weight: 500;

@@ -1,95 +1,4 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16pt;
-    line-height: 1.5;
-    color: #333;
-}
-
-/* index.html */
-.hero{
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0pt;
-    padding: 0pt;
-}
-
-.hero img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-}
-
-.hero-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.hero-text {
-    margin: calc(12vw - 100px) 0 0;
-    width: 100%;
-    font-family: "Playfair Display", serif;
-    font-weight: 500;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(180deg, goldenrod -20%, white 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 8vw;
-    text-align: center;
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
-    z-index: 2;
-}
-
-/* pages in /html/ */
-.page-header {
-    font-size: 2vw;
-    font-weight: bold;
-    text-align: center;
-    background: linear-gradient(180deg, goldenrod -20%, white 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
-    padding: 20px 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    letter-spacing: 1px;
-    line-height: 1.5;
-}
-
-/* used in Locations page */
-.container{
-    width: 90vw;
-    margin: 0 auto;
-}
-.row{
-    display: flex;
-}
-.col{
-    width: 100%;
-    padding: 15pt;
-}
-
-.w-100{
-    width: 100%;
-}
-
-/* used in Menu page */
+/* Menu page */
 
 .gallery {
     display: grid;
@@ -172,3 +81,13 @@ body{
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
     z-index: 2;
 }
+
+/* .employment-container{
+    width: 100%;
+}
+
+.employment-container iframe{
+    width: 100%;
+    height: 500px;
+    border: none;
+} */

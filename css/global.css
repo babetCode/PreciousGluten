@@ -108,3 +108,18 @@ body{
 .sans-serif-text{
     font-family: 'Roboto', sans-serif;
 }
+
+#main-footer {
+    background-color: snow;
+    border-top: 1pt solid goldenrod;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10pt;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-footer p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: bold;
+}
